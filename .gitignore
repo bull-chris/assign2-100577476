@@ -1,0 +1,16 @@
+#Ignore Default Wordpress files
+uploads
+upgrade
+
+#Ignore operating system files
+Thumbs.db
+ehthumbs.db
+.Trashes
+.Spotlight-V100
+._*
+.DS_Store?
+.DS_Store
+
+#Ignore debug related files
+*.log
+*.sql
