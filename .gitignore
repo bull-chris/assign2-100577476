@@ -2,6 +2,9 @@
 uploads
 upgrade
 
+#Ignore plugins used for development
+plugins
+
 #Ignore operating system files
 Thumbs.db
 ehthumbs.db
