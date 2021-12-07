@@ -8,8 +8,8 @@
     margin-bottom: 0rem;
 }
 
-/* site title style settings */
-.site-title {
+/* site title and site title a tag style settings */
+.site-title, .site-title a {
     font-size: 50px;
     font-weight: bold;
 }
@@ -24,7 +24,7 @@
 #primary-menu-list {
     justify-content: space-evenly;
     margin-top: 3rem;
-    background-color: rgba(14, 119, 148, 0.75);
+    background-color: rgba(14, 119, 148, 0.47);
 }
 
 /* current page item a tag style settings */
@@ -35,6 +35,21 @@
 
 /* h2 style settings */
 h2 {
+    font-weight: bold;
+}
+
+/* h3 style settings */
+h3 {
+    font-weight: bold;
+}
+
+/* h5 style settings */
+h5 {
+    font-size: 20px;
+}
+
+/* site content a tag settings */
+.site-content a {
     font-weight: bold;
 }
 
@@ -72,4 +87,55 @@ h2 {
 /* site-main style settings */
 .site-main {
     padding-top: 0rem;
+}
+
+/* life with hockey custom query posts style settings */ 
+.lifeWithHockeyPosts {
+    margin: 0rem auto;
+    width: 45%;
+}
+
+/* life with hockey custom query individual post style settings */ 
+#lifeWithHockeyIndividualPost {
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background-color:rgba(14, 119, 148, 0.205);
+}
+
+/* life with hockey custom query individual post h3, p, and a tag style settings */ 
+#lifeWithHockeyIndividualPost h3, #lifeWithHockeyIndividualPost p, #lifeWithHockeyIndividualPost a {
+    margin-top: 1rem;
+}
+
+/* wordpress social link style settings */
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link {
+    background-color: rgba(14, 119, 148, 0.47);
+    color: #fff;
+}
+
+/* img style settings */
+img {
+    box-shadow: 2px 5px 20px rgba(18, 50, 87, 0.45);
+}
+
+/* widget area style settings */
+.widget-area {
+    margin-top: 0rem;
+}
+
+/* footer site info style settings */
+.site-footer > .site-info {
+    display: block;
+    text-align: center;
+}
+
+/* footer site name style settings */
+.site-name {
+    font-weight: bold;
+}
+
+/* footer navigation wrapper style settings */
+.footer-navigation-wrapper {
+    justify-content: space-evenly;
 }

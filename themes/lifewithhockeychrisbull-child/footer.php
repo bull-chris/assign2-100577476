@@ -18,20 +18,23 @@
 
 				?>
 
-				<h2>My three most recent posts: </h2>
-
+				<article class="lifeWithHockeyPosts">
+					<h2>My three most recent Life with Hockey posts: </h2>
+					<?php
+					if($lifeWithHockeyPostQuery->have_posts()) {
+						while ($lifeWithHockeyPostQuery->have_posts()) {
+							$lifeWithHockeyPostQuery->the_post();?>
+							<div id="lifeWithHockeyIndividualPost">
+								<?php the_post_thumbnail(); ?>
+								<h3><?php the_title(); ?></h3>
+								<p><?php the_excerpt(); ?></p>
+								<p><a href="<?php the_permalink(); ?>">Go to this Life with Hockey post!</a></p>
+							</div>
+							<?php
+						}
+					}?>
+				</article>
 				<?php
-				if($lifeWithHockeyPostQuery->have_posts()) {
-					while ($lifeWithHockeyPostQuery->have_posts()) {
-						$lifeWithHockeyPostQuery->the_post();
-						the_post_thumbnail(); ?>
-						<h3><?php the_title(); ?></h3>
-						<p><?php the_excerpt(); ?></p>
-						<p><a href="<?php the_permalink(); ?>">Go to this Hockey post!</a></p>
-						<?php
-					}
-				}
-
 				//reset the loop post data
 				wp_reset_postdata();
 			}
