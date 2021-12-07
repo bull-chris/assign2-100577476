@@ -5,6 +5,7 @@
     display: block;
     text-align: center;
     /* background-color: rgba(18, 50, 87, 0.45); */
+    margin-bottom: 0rem;
 }
 
 /* site title style settings */
@@ -26,8 +27,49 @@
     background-color: rgba(14, 119, 148, 0.75);
 }
 
-/* current page item a style settings */
+/* current page item a tag style settings */
 .current_page_item > a:first-child {
     color: #fff;
     border: 3px solid rgba(18, 50, 87, 0.45);
+}
+
+/* h2 style settings */
+h2 {
+    font-weight: bold;
+}
+
+/* page header style settings */
+.page-header {
+    display: none;
+}
+
+/* entry header style settings */
+.entry-header {
+    display: none;
+}
+
+/* blog entry header style settings */
+.blog .entry-header {
+    display: block;
+}
+
+/* post style settings */ 
+.post {
+    margin-top: 0rem;
+    margin-bottom: 4rem;
+}
+
+/* content area style settings */
+.content-area {
+    margin-top: -3rem;
+}
+
+/* home and blog content area style settings */
+.home .content-area, .blog .content-area {
+    margin-top: -1.05rem;
+}
+
+/* site-main style settings */
+.site-main {
+    padding-top: 0rem;
 }
