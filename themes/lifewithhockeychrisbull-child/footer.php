@@ -5,7 +5,7 @@
 			<!-- add the life with hockey query content to the end of the main content -->
 			<?php
 			//check for front page plus about me and my site page within page.php
-			if (is_front_page() || is_page_template("about-my-life-with-hockey.php")) {
+			if (is_front_page() || is_page_template("templates/about-my-life-with-hockey.php")) {
 				//setup the WP_Query parameters
 				$lifeWithHockeyPostParameters = array(
 					'post_type' => 'post',
