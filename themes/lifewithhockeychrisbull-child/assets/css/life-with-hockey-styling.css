@@ -1,1 +1,33 @@
 /* Styling overrides for the Life with Hockey site */
+
+/* site header style settings */
+.site-header {
+    display: block;
+    text-align: center;
+    /* background-color: rgba(18, 50, 87, 0.45); */
+}
+
+/* site title style settings */
+.site-title {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* site description style settings */
+.site-description {
+    font-size: 25px;
+    margin-top: 0.5rem;
+}
+
+/* primary menu list style settings */
+#primary-menu-list {
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    background-color: rgba(14, 119, 148, 0.75);
+}
+
+/* current page item a style settings */
+.current_page_item > a:first-child {
+    color: #fff;
+    border: 3px solid rgba(18, 50, 87, 0.45);
+}
