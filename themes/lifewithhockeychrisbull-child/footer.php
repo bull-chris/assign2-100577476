@@ -5,7 +5,7 @@
 			<!-- add the life with hockey query content to the end of the main content -->
 			<?php
 			//check for front page plus about me and my site page within page.php
-			if (is_front_page() || is_page_template("about-me-and-my-site-template.php")) {
+			if (is_front_page() || is_page_template("about-my-life-with-hockey.php")) {
 				//setup the WP_Query parameters
 				$lifeWithHockeyPostParameters = array(
 					'post_type' => 'post',
@@ -18,12 +18,18 @@
 
 				?>
 
+				<!-- article to contain the life with hockey custom query posts -->
 				<article class="lifeWithHockeyPosts">
+					<!-- Posts title -->
 					<h2>My three most recent Life with Hockey posts: </h2>
 					<?php
+					//check if the life with hockey post query has posts
 					if($lifeWithHockeyPostQuery->have_posts()) {
+						//loop through the life with hockey post query
 						while ($lifeWithHockeyPostQuery->have_posts()) {
+							//set the post for wordpress
 							$lifeWithHockeyPostQuery->the_post();?>
+							<!-- div to contain the post information -->
 							<div id="lifeWithHockeyIndividualPost">
 								<?php the_post_thumbnail(); ?>
 								<h3><?php the_title(); ?></h3>
@@ -42,6 +48,9 @@
 			</main><!-- #main -->
 		</div><!-- #primary -->
 	</div><!-- #content -->
+
+
+	<!-- Standard footer content for Life with Hockey site, which uses the same structure as the parent twenty twenty one theme -->
 
 	<?php get_template_part( 'template-parts/footer/footer-widgets' ); ?>
 
