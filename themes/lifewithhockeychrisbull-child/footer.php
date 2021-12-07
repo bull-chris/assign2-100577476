@@ -4,8 +4,8 @@
 ?>
 			<!-- add the life with hockey query content to the end of the main content -->
 			<?php
-			//check for front page plus about me and my site page within page.php
-			if (is_front_page() || is_page_template("templates/about-my-life-with-hockey.php")) {
+			//check for front page plus about my life with hockey page within page.php
+			if (is_front_page() || is_page_template("custom_templates/about-my-life-with-hockey.php")) {
 				//setup the WP_Query parameters
 				$lifeWithHockeyPostParameters = array(
 					'post_type' => 'post',
@@ -13,7 +13,7 @@
 					'orderby' => 'date'
 				);
 
-				//create a new WP_Query for the front page and about me and my site page
+				//create a new WP_Query for the front page and about my life with hockey page
 				$lifeWithHockeyPostQuery = new WP_Query($lifeWithHockeyPostParameters);
 
 				?>
